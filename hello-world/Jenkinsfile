@@ -3,12 +3,14 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis to the code'
+                echo 'this is an extra echo!echo!echo!'
             }
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile the source code'
+                echo 'this is an extra echo!echo!echo!'
             }
         }
         stage('Security Check') {
